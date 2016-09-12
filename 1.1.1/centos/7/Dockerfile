@@ -11,4 +11,6 @@ CMD ["marathon", "--no-logger"]
 
 COPY entrypoint.sh /
 
+EXPOSE 8080
+
 ENTRYPOINT ["/usr/local/bin/dumb-init", "/entrypoint.sh"]
